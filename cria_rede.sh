@@ -7,6 +7,6 @@ do
 	
 	porta=$((4000+$i))
 	exec "./trab.py"  $porta &
-	sleep 0.2
+	sleep 1
 	echo "Nó $i criado na porta $porta"
 done

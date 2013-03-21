@@ -562,7 +562,7 @@ class EntangledViewerWindow(gtk.Window):
         def getValue(result):
             self.viewer.printMsgCount = True
             for dados in result.values():
-                self.buffer += dados
+                self.buffer += str(dados)
 
         # Percorre pedacos e passa para obter o valor dos mesmo
         def showValue(result):
